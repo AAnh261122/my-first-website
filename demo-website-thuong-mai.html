@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1z">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href="mainnew.css">
+    <title>Website thương mại điện tử</title>
+
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        #wrapper{
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h1{
+            font-size: 18px;
+            color: #a44108;
+            padding: 10px 20px;
+            text-transform: uppercase;
+           
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        h2{
+            font-size: 13px;
+            color: #000;
+            padding: 10px;
+            text-transform: uppercase;
+           
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+
+            margin-bottom: 30px;
+        }
+        
+        ul.products li img{ 
+            max-width: 100%;
+            height: auto;
+
+        }
+        ul.products li .product-top {
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display: block;
+
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%)
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover  a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding: 2px 0px;
+
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+
+        }
+        ul.products li .product-info .product-price{
+            
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+        form.product .product-info a.search-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <div id = "wrapper">
+        <header>
+           
+            <div class = "inner-header container ">
+                <a href ="" id="logo">FoodTop</a>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Bài viết</a></li>
+                        <li><a href="">Trợ giúp</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href = "">Hotline?</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <form action="" id="search-box">
+                <input type = "text" id = "search-text">
+                <button id = "search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </form>
+        </header>
+        <div id = "banner">
+
+        </div>
+        <div id = "content" class = "container">
+            <h1>Đưa FoodTop về nhà</h1>
+                 <p>FoodTop có mấy món hay ơi là hay. Đúng mùa nào thức ấy, thực đơn thay đổi theo mùa đơm hoa kết trái của sản vật địa phương. Giờ đây, bạn chỉ việc ở tại nhà và gọi món giao về, FoodTop sẽ đưa cả hương-vị ẩm thực thân thương, quen quen là lạ, đến với gia đình bạn.</p>
+            <h1>HÔM NAY CÓ GÌ?</h1>
+             <ul class="products">
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "banh-hoi-tom.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Cần Thơ</a>
+                            
+                            <a href="" class="product-name">Bánh hỏi tôm</a>
+                            <div class="product-price">100.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "ca-hap-tre.png" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Huế</a>
+                            
+                            <a href="" class="product-name">Cá hấp tre</a>
+                            <div class="product-price">130.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "trung-cua-sot.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Đà Nẵng</a>
+                            
+                            <a href="" class="product-name">Trứng Cua Sốt</a>
+                            <div class="product-price">180.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "xuc-xich-sot-me.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Thái Bình</a>
+                            
+                            <a href="" class="product-name">Xúc xích sốt me</a>
+                            <div class="product-price">150.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "banh-mi-cay-hai-phong.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Hải Phòng</a>
+                            
+                            <a href="" class="product-name">Bánh mì cay</a>
+                            <div class="product-price">80.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "my-quang.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Huế</a>
+                            
+                            <a href="" class="product-name">Mỳ Quảng</a>
+                            <div class="product-price">100.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "mon-che-kho.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Ninh Bình</a>
+                            
+                            <a href="" class="product-name">Món Chè Kho</a>
+                            <div class="product-price">120.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "de-nui-hap-xả.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Quảng Nam</a>
+                            
+                            <a href="" class="product-name">Dê núi hấp xả</a>
+                            <div class="product-price">190.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "bun-sua-nha-trang.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Nha Trang</a>
+                            
+                            <a href="" class="product-name">Bún sứa Nha Trang</a>
+                            <div class="product-price">110.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "cơm gà Hội An.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Hội An</a>
+                            
+                            <a href="" class="product-name">Cơm gà Hội An</a>
+                            <div class="product-price">100.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                       <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src = "Banh-khot.jpg" alt = "">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                       </div> 
+                       <div class="product-info">
+                            <a href="" class="product-cat">Đặc sản Vũng Tàu</a>
+                            
+                            <a href="" class="product-name">Bánh khọt</a>
+                            <div class="product-price">55.000 VND</div>
+                       </div>
+                    </div>
+                </li>
+             </ul>         
+        </div>
+    </div>
+    <script src = "https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $(window).scroll(function(){
+                if ($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                }
+            });
+
+        });
+    </script>
+     <div id = "footer">
+        <p>Copyright &copy; by Foodtop.com</p>
+        <h1>Thông tin liên hệ</h1>
+        <br>
+        <h2>Địa chỉ</h2>
+        <p>Số 25 Phố Thọ Tháp, Quận Cầu Giấy, TP. Hà Nội</p>
+        <h2>Điện thoại</h2>
+        <p>056564564643</p>
+        <h2>Email</h2>
+        <p>FoodTop@gmail.com</p>
+    </div>
+</body>
+</html>
